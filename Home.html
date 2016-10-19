@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- your webpage info goes here -->
+
+    <title>Men's Basketball Shoes</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border-style: solid;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+.body-home{
+	background-color: #2B2B2B;
+    background-image:url("Shoes.jpeg");
+    background-color: white;
+}
+.col-sm-4{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  img.image{
+    max-width: 424px; max-height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+  }
+  img.ima{max-width: 417px; max-height: 300px;
+    display: block;
+    margin-left: 37%;
+    margin-right: auto
+  }
+  img.imaa{max-width: 424px; max-height: 300px;
+    display: block;
+    margin-left: 20%;
+    margin-right: auto
+
+  }
+h1{
+    text-align: center;
+  }
+
+</style>
+	
+</head>
+<body bgcolor=" #F0FFFF">
+
+ <ul>
+  <li><a class="active" href="Home.html">Home</a></li>
+  <li><a href="">Adidas</a></li>
+  <li><a href="">Under Armour</a></li>
+  <li><a href="Nike.html">Nike</a></li>
+ <li style="float:right"><a class="active" href="#about">About</a></li>
+</ul>
+
+<h2 class="w3-center">Men's Basketball Shoes</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src=".\Images\NK2C.jpg" style="width:100%">
+  <img class="mySlides" src=".\Images\GreenGlow.jpg" style="width:100%">
+  <img class="mySlides" src=".\Images\Nike zoom2.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+<div class="container-fluid">
+  <h1><strong>Wear All You Want</strong></h1>
+
+<table width="500" border="0" cellpadding="5">
+  <tr>
+
+  <div class="row">
+<td>
+    <div class="col-sm-4">
+      <img class="image" src=".\Images\GreenGlow.jpg" alt="GreenGlow">
+    
+</td>
+<td>
+      <img class="imaa" src=".\Images\Nike zoom2.jpg"  alt="Nike zoom2">
+      
+
+</td>
+<td>
+      <img class="ima" src=".\Images\NK2C.jpg" alt="NK2C">
+      
+</td>
+
+    </div>
+    </table>  
+   
+
+  </div>
+</div>
+
+
+</body>
+</html>
